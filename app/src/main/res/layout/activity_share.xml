@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/line_layout_device"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginBottom="5dp"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv_users"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_cancle"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/btn_add_group"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_cancle"
+        style="@style/btn_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_share"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/di_left"
+        android:layout_marginRight="@dimen/di_right"
+        android:text="@string/undo_share"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_share"
+        style="@style/btn_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/di_left"
+        android:layout_marginRight="@dimen/di_right"
+        android:text="@string/share_device" />
+
+</RelativeLayout>

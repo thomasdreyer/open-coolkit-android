@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_name"
+    style="@style/lv_name"
+    android:background="#dde0e1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="6dp"
+    android:paddingLeft="3dp"
+    android:paddingTop="3dp" >
+
+    <TextView
+        android:background="#ffffff"
+        android:id="@+id/tv_setname"
+        style="@style/page_des"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/di_item_height"
+        android:paddingLeft="@dimen/di_left"
+        android:text="@string/modify_nickname" android:gravity="center_vertical"/>
+    
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+       />
+
+     <TextView
+         android:background="#ffffff"
+        android:id="@+id/tv_set_pass"
+        style="@style/page_des"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/di_item_height"
+        android:paddingLeft="@dimen/di_left"
+        android:text="@string/change_password_out" android:gravity="center_vertical"/>
+</LinearLayout>

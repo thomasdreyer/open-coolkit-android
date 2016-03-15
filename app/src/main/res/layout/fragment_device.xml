@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:dslv="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/line_layout_device"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#dde0e1"
+    android:gravity="center|top"
+    >
+
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/rl_air"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_air_name"
+            style="@style/lv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="6dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="15dp"
+            android:text="@string/intellgent_air_purifier" />
+
+        <TextView
+            android:id="@+id/tv_air_des"
+            style="@style/lv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_air_name"
+            android:text="@string/info_experience" />
+
+        <ImageView
+            android:id="@+id/iv_arig_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="31dp"
+            android:src="@drawable/go"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_camara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_air"
+        android:layout_gravity="center_vertical"
+        android:background="#ffffff"
+        android:gravity="center_vertical" android:visibility="gone" android:layout_marginBottom="2dp" >
+
+        <ImageView
+            android:id="@+id/iv_ca_icon"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="10px"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingTop="10px"
+            android:src="@drawable/remote_item" />
+
+        <TextView
+            android:id="@+id/tv_ca_name"
+            style="@style/lv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/iv_ca_icon"
+            android:text="@string/intellgent_remote"
+            android:paddingLeft="3dp" />
+
+        <TextView
+            android:id="@+id/tv_ca_des"
+            style="@style/lv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ca_name"
+            android:layout_toRightOf="@+id/tv_ca_name"
+            android:text="222"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_ca_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="31dp"
+            android:src="@drawable/go" />
+    </RelativeLayout>
+
+    <elink.dslv.DragSortListView
+        android:id="@+id/lv_device_list"
+        android:paddingBottom="50dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/rl_camara"
+        android:scrollbars="none" />
+<TextView
+    android:layout_width="fill_parent"
+    android:id="@+id/ll_bottom"
+    android:layout_height="2dp" android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

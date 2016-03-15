@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#33b8ef"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:contentDescription="TODO"
+            android:paddingTop="30dp"
+            android:src="@drawable/head" />
+
+        <TextView
+            android:id="@+id/tv_nick"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="f " />
+    </LinearLayout>
+
+    <!-- my info -->
+
+    <RelativeLayout
+        android:id="@+id/rl_user_info"
+        android:layout_width="fill_parent"
+        android:layout_height="41dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/lv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/iv_info"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="3dp"
+            android:text="@string/personal_infomation" />
+
+        <ImageView
+            android:id="@+id/iv_go"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="31dp"
+            android:src="@drawable/go" />
+
+        <ImageView
+            android:id="@+id/iv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:src="@drawable/me" />
+    </RelativeLayout>
+    <!-- msg center -->
+
+    <!-- product support -->
+
+    <!-- use -->
+
+    <!-- about -->
+
+
+</LinearLayout>

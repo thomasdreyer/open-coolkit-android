@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/line_layout_device"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/new_home_kit" />
+
+    <TextView
+        android:id="@+id/tv_gap"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_tip"
+        android:layout_marginTop="0dp"
+        android:background="@color/blue" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_gap"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/find_new_version" />
+
+    <Button
+        android:id="@+id/btn_download"
+        style="@style/btn_style"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/tv_content"
+        android:text="@string/upgrade" />
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/line_layout_device"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/ll_state"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_sw_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/switch_tab_state_o" />
+
+        <ImageView
+            android:id="@+id/iv_sw_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/switch_tab_state_o" />
+
+        <ImageView
+            android:id="@+id/iv_sw_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/switch_tab_state_o" />
+
+        <ImageView
+            android:id="@+id/iv_sw_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/switch_tab_state_o" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll_state"
+        android:background="@drawable/switch_bg"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_layout_manufact"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_manufactor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="32dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_des"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="32dp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_state"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/ll_layout_manufact"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/switch_state_close" />
+
+        <ImageView
+            android:id="@+id/iv_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_state"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_close"  android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/tv_power_text"
+            android:layout_marginTop="42dp"
+            android:layout_alignTop="@+id/iv_state"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

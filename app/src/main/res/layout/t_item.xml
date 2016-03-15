@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_name"
+    style="@style/lv_name"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/di_item_height"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/di_left"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        style="@style/page_title"
+        />
+
+    <ImageView
+        android:id="@+id/iv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:src="@drawable/timer_blue" />
+
+    <TextView
+        android:id="@+id/tv_repet_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iv_timer"
+        android:background="@null" style="@style/page_des"/>
+
+    <ImageView
+        android:id="@+id/btn_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="18dp"
+        android:src="@drawable/btn_del" />
+
+</RelativeLayout>

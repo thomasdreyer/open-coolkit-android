@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/line_layout_device"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/cv_show_hex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/hex_display" />
+
+    <LinearLayout
+        android:id="@+id/ll_l"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/cv_show_hex" >
+
+        <ListView
+            android:id="@+id/lv_response"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_request"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_l"
+        android:hint="@string/enter_cmd" />
+
+    <Button
+        android:id="@+id/btn_asiic"
+        style="@style/btn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/et_request"
+        android:layout_margin="5dp"
+        android:text="@string/assiic_directive" />
+
+    <Button
+        android:id="@+id/btn_hex"
+        style="@style/btn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/et_request"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/btn_asiic"
+        android:text="@string/hex_directive" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        style="@style/btn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/et_request"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/btn_hex"
+        android:text="@string/clear_result" />
+
+    <Button
+        android:id="@+id/btn_share"
+        style="@style/btn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/et_request"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/btn_clear"
+        android:text="@string/share"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/btn_show_send"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/et_request"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/btn_share"
+        android:text="@string/display_send" />
+
+</RelativeLayout>

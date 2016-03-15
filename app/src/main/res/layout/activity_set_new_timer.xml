@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:id="@+id/layout_container">
+
+    <RelativeLayout
+        android:id="@+id/layoutTimerList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:visibility="visible">
+
+
+        <ListView
+            android:id="@+id/lv_timers"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/btn_add_timer"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"  android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/img_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="87dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/timer_bg_list" android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/info_list"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/img_bg"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="@string/info_newtime"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/btn_add_timer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray"
+            android:drawableTop="@drawable/add_group"
+            android:text="@string/add_new_timer" android:gravity="center" android:padding="5dp"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_adding_view_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

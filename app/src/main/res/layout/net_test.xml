@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_users" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_btn" />
+
+    <Button
+        android:id="@+id/edit_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_password" />
+
+    <Button
+        android:id="@+id/reset_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/repassword" />
+
+    <Button
+        android:id="@+id/test_notify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_notification_msg" />
+
+    <TextView
+        android:id="@+id/res_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/rg_device">
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开debug"
+
+            android:id="@+id/switch2" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="20dp" android:text="1通道开关" android:id="@+id/s1" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="20dp" android:text="2通道开关" android:id="@+id/s2"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="20dp" android:text="3通道开关" android:id="@+id/s3"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="20dp" android:text="4通道开关" android:id="@+id/s4"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="20dp" android:text="1通道插座" android:id="@+id/p1"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="20dp" android:text="2通道插座" android:id="@+id/p2"/>
+        <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="20dp" android:text="3通道插座" android:id="@+id/p3"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="20dp" android:text="4通道插座" android:id="@+id/p4"/>
+
+
+    </RadioGroup>
+
+
+
+    <!-- -->
+      <!--<TextView-->
+    <!--android:id="@+id/set_host"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="0.68"-->
+    <!--android:text="@string/toogle_current" />-->
+
+
+</LinearLayout>

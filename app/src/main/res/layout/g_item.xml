@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_name"
+    style="@style/lv_name"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/di_item_height"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="@dimen/di_left"
+    android:paddingTop="5dp" >
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"  android:layout_centerInParent="true"
+        android:paddingLeft="18dp" />
+
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/iv_icon"  android:layout_centerInParent="true"
+        android:paddingLeft="5dp" android:src="@drawable/edit"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_edit"
+        android:background="@null"  android:layout_centerInParent="true"
+         />
+
+    <ImageView
+        android:id="@+id/btn_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:paddingRight="18dp"
+        android:src="@drawable/btn_del" />
+
+</RelativeLayout>

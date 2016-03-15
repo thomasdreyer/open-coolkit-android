@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="page_title">#555555</color>
+<color name="page_des">#555555</color>
+<color name="blue">#33b8ef</color>
+<color name="white">#ffffff</color>
+<color name="gray">#ebebeb</color>
+
+<color name="yellow">#FFE384</color>
+
+<color name="gray_heavy">#c1c1c1</color>
+<color name="red">#ee4b4b</color>
+<color name="black">#000000</color>
+
+    <color name="lv_title">#555555</color>
+    <color name="lv_des">#bbb9b9</color>
+</resources>

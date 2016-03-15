@@ -1,0 +1,121 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="page_title">
+        <item name="android:textSize">@dimen/page_title</item>
+        <item name="android:textColor">@color/page_title</item>
+    </style>
+
+    <style name="lv_name">
+        <item name="android:textSize">@dimen/page_title</item>
+        <item name="android:textColor">@color/page_title</item>
+    </style>
+
+    <style name="lv_des">
+        <item name="android:textSize">@dimen/page_des</item>
+        <item name="android:textColor">@color/lv_des</item>
+    </style>
+
+    <style name="page_back">
+        <item name="android:textSize">@dimen/di_back</item>
+        <item name="android:textColor">@color/page_title</item>
+    </style>
+
+    <style name="page_des">
+        <item name="android:textSize">@dimen/page_des</item>
+        <item name="android:textColor">@color/page_des</item>
+    </style>
+
+    <style name="btn_text">
+        <item name="android:textSize">@dimen/btn_text</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="homekit" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/my_actionbar_style</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+
+    <style name="my_actionbar_style" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/blue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/save_pwd</item>
+    </style>
+    <style name="CustomCheckboxThemes" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/lay_ridio</item>
+    </style>
+
+    <style name="btn_style" parent="@android:style/Widget.Button">
+        <item name="android:background"> @drawable/btn_selector</item>
+        <item name="android:textSize">@dimen/btn_text</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="style_list_item">
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">@dimen/page_des</item>
+        <item name="android:textColor">@color/page_des</item>
+
+
+    </style>
+        <style name="common_border_style">
+            <item name="android:textSize">@dimen/text_normal_size</item>
+            <item name="android:background">@drawable/commonborder</item>
+            <item name="android:padding">15.0dip</item>
+        </style>
+
+    <style name="PopupAnimation" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+    <style name="AnimationFade">
+    <!-- PopupWindow左右弹出的效果-->
+    <item name="android:windowEnterAnimation">@anim/in_lefttoright</item>
+    <item name="android:windowExitAnimation">@anim/out_righttoleft</item>
+</style>
+
+    <style name="AnimationSetTimer">
+        <!-- PopupWindow左右弹出的效果-->
+        <item name="android:windowEnterAnimation">@anim/from_y_in</item>
+        <item name="android:windowExitAnimation">@anim/from_y_out</item>
+    </style>
+
+<!-- activity  -->
+    <style name="ThemeActivity"  mce_bogus="1">
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity" mce_bogus="1">
+        <item name="android:activityOpenExitAnimation">@anim/out_from_left</item>
+        <item name="android:activityOpenEnterAnimation">@anim/in_from_right</item>
+
+        <item name="android:activityCloseExitAnimation">@anim/out_from_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/in_from_left</item>
+
+
+
+
+    </style>
+
+
+    <!--<item name="android:activityOpenEnterAnimation">@anim/zoomin</item>
+
+    <item name="android:activityCloseEnterAnimation">@anim/back_enter</item>
+
+    <item name="android:activityOpenExitAnimation">@anim/zoomout</item>
+    <item name="android:activityCloseExitAnimation">@anim/back_exit</item>-->
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="demo.demo" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="22" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!--android:theme="@style/homekit"    -->
+    <application
+        android:name="elink.HkApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        tools:replace="android:icon,android:theme"
+        android:theme="@style/homekit"
+         >
+        <activity
+            android:name="elink.activity.MainActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="elink.activity.SetTimerActvity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="elink.activity.SetNewTimerActvity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="elink.activity.SetNewVirtualTimerActvity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="elink.activity.DeviceActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.coolkit.homekit.USER_DEVICES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="elink.activity.UserLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="elink.activity.SetUserAuthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.activity.AddDeviceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateUnspecified" />
+        <activity
+            android:name="elink.activity.UserCenterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="elink.activity.ShareDeviceActvity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="elink.activity.DetailSwitchActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="elink.activity.AddTimerActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="elink.activity.SetInfoActvity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="elink.activity.SetUserInfoActvity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+
+        <activity
+            android:name="elink.activity.DeviceManufactorActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="elink.activity.DialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity android:name="elink.activity.CountryCodeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+
+        <activity
+            android:name="com.espressif.iot.ui.configure.DeviceEspTouchActivity"
+            android:screenOrientation="portrait" />
+        <receiver android:name="elink.NetChangeReciever" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>

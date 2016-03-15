@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/line_layout_device"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_goback"
+        style="@style/page_back"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/blue"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/go_back"
+        android:drawablePadding="2dp"
+        android:gravity="center"
+
+        android:textColor="@color/white"
+        android:textSize="@dimen/page_title" android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_layout"
+        android:layout_below="@+id/tv_goback">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_countrycode"
+            android:layout_marginTop="51dp"
+            android:paddingLeft="35dp"
+            android:text="+446"
+            android:gravity="center_horizontal"
+            android:textColor="@color/blue"
+            android:textSize="18sp"/>
+        <ImageView
+            android:id="@+id/iv_corner"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="53dp"
+            android:src="@drawable/reset_register_corner"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="51dp"
+            android:background="@null"
+            android:contentDescription="TODO"
+            android:hint="@string/enter_phone_numbers"
+            android:singleLine="true"
+            android:paddingRight="@dimen/di_right"
+            android:textColorHint="#bcbcbc"
+            android:inputType="phone"
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_d0"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_layout"
+        android:layout_marginTop="1dp"
+        android:background="@color/blue"
+        android:layout_marginLeft="@dimen/di_left"
+        android:layout_marginRight="@dimen/di_right" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_d0"
+        android:layout_marginTop="@dimen/register_sms_code_margintop"
+        android:singleLine="true"
+        android:background="@null"
+        android:paddingLeft="@dimen/di_left"
+        android:paddingRight="@dimen/di_right"
+        android:textColorHint="#bcbcbc" />
+
+
+
+    <TextView
+        android:id="@+id/tv_d1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/et_pwd"
+        android:layout_marginTop="1dp"
+        android:background="@color/blue"
+        android:layout_marginLeft="@dimen/di_left"
+        android:layout_marginRight="@dimen/di_right" />
+
+    <TextView
+        android:id="@+id/tv_pwd_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_d1"
+        android:paddingLeft="@dimen/di_left"
+        android:paddingRight="@dimen/di_right"
+        android:text="@string/info_fomat_paswd" />
+
+    <RelativeLayout
+        android:id="@+id/ll_sms_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_d1"
+        android:layout_marginTop="@dimen/register_sms_code_margintop"
+        android:paddingLeft="@dimen/di_left"
+        android:paddingRight="@dimen/di_right" >
+
+        <EditText
+            android:id="@+id/et_sms_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_timer"
+            android:background="@null"
+            android:hint="@string/message_code"
+            android:singleLine="true"
+            android:textColorHint="#bcbcbc" />
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/send_verification_code" />
+
+        <TextView
+            android:id="@+id/tv_d2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_timer"
+            android:layout_marginTop="2dp"
+            android:background="@color/blue" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_heigh"
+        android:layout_below="@+id/ll_sms_code"
+        android:layout_marginLeft="@dimen/di_left"
+        android:layout_marginRight="@dimen/di_right"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/register_shape"
+        android:gravity="center"
+        android:text="@string/register"
+        android:textColor="#555555" />
+
+</RelativeLayout>

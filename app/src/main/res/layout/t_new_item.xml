@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_name"
+    style="@style/lv_name"
+    android:layout_width="fill_parent"
+    android:layout_height="62dp"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/iv_timer"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"  />
+
+
+    <LinearLayout android:layout_toRightOf="@+id/iv_timer"
+        android:id="@+id/lay_item_top"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+       android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="5dp"
+            android:singleLine="true"
+             />
+
+        <TextView
+            android:id="@+id/tv_repet_type"
+            style="@style/page_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rd_one"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="3dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/btn_del"
+        android:background="@drawable/oneroad"
+        android:gravity="center"
+        android:text="1" />
+    <ImageView
+        android:id="@+id/btn_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="18dp"
+
+        android:src="@drawable/btn_del" />
+
+</RelativeLayout>

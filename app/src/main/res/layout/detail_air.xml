@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/line_layout_device"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal" >
+
+
+    <RelativeLayout
+        android:id="@+id/rl_power_contaner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tv_manufactor_power"
+            android:layout_width="fill_parent"
+            android:layout_height="32dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_des_power"
+            android:layout_width="fill_parent"
+            android:layout_height="32dp"
+            android:layout_below="@+id/tv_manufactor_power"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/iv_state_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_des_power"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ari_clean" />
+
+      
+
+        <TextView
+            android:id="@+id/tv_current_degree_pad_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_state_power"
+            android:layout_centerHorizontal="true"
+            
+            android:gravity="center"
+            android:text="" />
+
+        <LinearLayout
+            android:id="@+id/ll_powers"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_current_degree_pad_power"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/tv_power_one"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_power_selector"
+                android:gravity="center"
+                android:text="@string/one_gear" />
+
+            <Button
+                android:id="@+id/tv_power_two"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_power_selector"
+                android:gravity="center"
+                android:text="@string/two_gear" />
+
+            <Button
+                android:id="@+id/tv_power_three"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_power_selector"
+                android:gravity="center"
+                android:text="@string/third_gear" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_btn_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_powers"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/icon_close"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

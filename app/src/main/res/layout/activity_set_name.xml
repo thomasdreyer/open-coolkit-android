@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#dde0e1">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:background="#ffffff"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+        <TextView
+            android:id="@+id/tv_setname"
+            style="@style/page_des"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/di_item_height"
+            android:paddingLeft="@dimen/di_device_left"
+            android:text="@string/divece_name" android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/tv_devicename"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/di_item_height"
+            android:layout_toRightOf="@+id/tv_setname"
+            android:paddingLeft="@dimen/page_gap"
+            android:gravity="center_vertical"
+            android:maxWidth="200dp"
+            android:text="divece"/>
+        <ImageView
+            android:id="@+id/setting_name"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/setting"
+            android:paddingLeft="25dp"
+            android:paddingRight="@dimen/page_gap"/>
+    </RelativeLayout>
+
+    <RelativeLayout  android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:id="@+id/rl_wifiname"
+        android:background="#ffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_wifiname"
+            style="@style/page_des"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/di_item_height"
+            android:paddingLeft="@dimen/di_device_left"
+            android:text="@string/Wifi_Name" android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/wifi_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/di_item_height"
+            android:layout_toRightOf="@+id/tv_wifiname"
+            android:text="wifi"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/page_gap"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:background="#ffffff"
+        android:id="@+id/rl_wifipwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tv_wifipwd"
+            style="@style/page_des"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/di_item_height"
+            android:paddingLeft="@dimen/di_device_left"
+            android:text="@string/Wifi_PassWord" android:gravity="center_vertical" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/di_item_height"
+            android:layout_toRightOf="@+id/tv_wifipwd"
+            android:text="pwd"
+            android:paddingLeft="@dimen/page_gap"
+            android:gravity="center_vertical"
+            android:id="@+id/wifi_pwd"
+            android:textColor="@color/red"
+            />
+        <ImageView
+            android:id="@+id/iv_pwd_eye"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/eye_on_black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:visibility="gone"
+        android:id="@+id/rg_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/di_device_left"
+        android:orientation="horizontal"
+        android:background="@color/white" android:layout_marginTop="10dp" >
+        <RadioButton
+            android:id="@+id/rb_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/power_on" android:paddingTop="15dp" android:paddingBottom="15dp"/>
+        <RadioButton
+            android:id="@+id/rb_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/power_off" android:paddingTop="15dp" android:paddingBottom="15dp"/>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" android:id="@+id/rl_target" android:visibility="gone" android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/page_des"
+            android:id="@+id/tv_set_humidity_target"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/di_item_height"
+            android:paddingLeft="@dimen/di_device_left"
+            android:text="目标动作"
+            android:gravity="center_vertical" />
+        <ImageView
+            android:id="@+id/iv_humidity_clear"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+           android:layout_toLeftOf="@+id/iv_set_humidity_target"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_del"
+            android:paddingLeft="25dp"
+            android:paddingRight="@dimen/page_gap" />
+
+        <ImageView
+            android:id="@+id/iv_set_humidity_target"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/setting"
+            android:paddingLeft="25dp"
+            android:paddingRight="@dimen/page_gap" />
+    </RelativeLayout>
+</LinearLayout>

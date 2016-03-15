@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+<!--dde0e1-->
+
+<RelativeLayout
+    android:id="@+id/line_upgrade_ota"
+    android:layout_width="fill_parent"
+    android:paddingTop="5dp"
+    android:layout_height="40dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_upgradeinfo"
+
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/info_upgrade"
+        />
+
+    <TextView
+        android:id="@+id/tv_ota_title"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/img_upgradeinfo"
+        android:layout_alignTop="@id/img_upgradeinfo"
+        android:layout_alignBottom="@id/img_upgradeinfo"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="@string/firmware"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_ota_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:layout_toRightOf="@+id/tv_ota_title"
+        android:layout_alignTop="@id/tv_ota_title"
+        android:layout_alignBottom="@id/tv_ota_title"
+        android:layout_marginLeft="2dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="visible" />
+    <TextView
+        android:id="@+id/tv_otainfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_ota_version"
+        android:layout_alignTop="@id/tv_ota_version"
+        android:layout_alignBottom="@id/tv_ota_version"
+        android:layout_marginLeft="2dp"
+        android:textSize="13dp"
+        android:text="@string/canupgrade"
+
+        android:layout_gravity="center"
+
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_ota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="13dp"
+        android:text="1.0.2"
+        android:layout_toRightOf="@+id/tv_otainfo"
+        android:layout_alignTop="@id/tv_otainfo"
+        android:layout_alignBottom="@id/tv_otainfo"
+        android:layout_gravity="center"
+
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/myProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:visibility="visible"
+        />
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/webView"
+        android:visibility="visible"
+        />
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/loadimg"
+
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_infodev"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/loadimg"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="@string/dev_notinfo"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+
+
+
+</LinearLayout>

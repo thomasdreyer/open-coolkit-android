@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+    <LinearLayout
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+    <RelativeLayout
+        android:id="@+id/rl_item1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="#ffffff"
+        android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/iv_icon1"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:paddingBottom="10px"
+                android:paddingLeft="17dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10px"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_name1"
+                style="@style/lv_name"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:maxWidth="@dimen/edittextwidth"
+                android:layout_toRightOf="@+id/iv_icon1"
+                android:paddingLeft="2dp" />
+
+            <TextView
+                android:id="@+id/tv_des1"
+                style="@style/lv_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name1"
+                android:layout_toRightOf="@+id/iv_icon1"
+                android:text="222"
+                android:visibility="gone" />
+        <ImageView
+            android:id="@+id/time_icon1"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_toLeftOf="@+id/tv_split1"
+            android:layout_toStartOf="@+id/tv_split1"
+            android:text="222"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_split1"
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/iv_go1"
+            android:background="#DCDCDC"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_go1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/go" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_ota1"
+        android:layout_width="@dimen/di_btn_width"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/iv_go1"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:text="@string/firmware_upgrade"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_del1"
+        android:layout_width="@dimen/di_btn_width"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/iv_go1"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="2dp" />
+
+    <LinearLayout
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/rl_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffff"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="10px"
+                android:paddingLeft="17dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10px"
+                 />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/lv_name"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:maxWidth="@dimen/edittextwidth"
+                android:layout_toRightOf="@+id/iv_icon"
+                android:paddingLeft="2dp" />
+
+            <TextView
+                android:id="@+id/tv_des"
+                style="@style/lv_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_toRightOf="@+id/iv_icon"
+                android:text="222"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/time_icon"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_toLeftOf="@+id/tv_split"
+                android:layout_toStartOf="@+id/tv_split"
+                android:text="222"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_split"
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/iv_go"
+                android:background="#DCDCDC"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_go"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/go" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_ota"
+            android:layout_width="@dimen/di_btn_width"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/iv_go"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:text="@string/firmware_upgrade"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_del"
+            android:layout_width="@dimen/di_btn_width"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/iv_go"
+            android:background="#ffffff"
+            android:gravity="center"
+
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+</LinearLayout>
