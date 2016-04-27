@@ -36,7 +36,8 @@ public class HkApplication extends Application {
 
     public AppHelper mAppHelper = null;
     public SystemActionHolder mSysManager;
-
+    public String MAKER_ID="oc3tvAdJPmaVOKrLv0rjCC0dzub4bbnD";
+    public String MAKER_SECRET="V0LmoW0cd2cg38i1eIM0P5Z29GjES4PA";
     @Override
     public void onCreate() {
         super.onCreate();
@@ -52,12 +53,9 @@ public class HkApplication extends Application {
     private void initAppidAndSecrete() {
 
         // APPID and APPSECREATE for maker to run test, if your are building a commercial project, you must apply for a private APPID and APPSECREATE , and init mAppid and mSecret
-        String mAppid = "1xMdjbmOBYctEJfye4EjFLR2M6YpYyyJ";
-        String mSecret = "hd9yf3DB7Q4UL6gx8iCfUGXwtYoxhCs5";
+        String mAppid = MAKER_ID;
+        String mSecret = MAKER_SECRET;
 
-
-        //if you are using private   mAppid and mSecret, block this statement
-        mAppHelper.setDebug("54.223.98.144", "54.223.98.144");
 
         mAppHelper.initApp(mAppid, mSecret);
     }

@@ -346,11 +346,7 @@ public class DetailSwitchActivity<T> extends BasicActivity<T> implements
 			IntentHelper.starSettingNameActvity(this,mDeviceEntity.mDeviceId);
 			break;
 		}
-		case R.id.iv_info: {
-			IntentHelper.startDeviceManuFactorActivity(this, mDeviceEntity);
-		}
-			;
-			break;
+
 		default:
 			break;
 		}

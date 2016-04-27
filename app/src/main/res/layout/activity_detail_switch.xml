@@ -31,7 +31,7 @@
         android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"
-        android:layout_marginTop="20dp" android:visibility="gone">
+        android:layout_marginTop="20dp">
 
         <ImageView
             android:id="@+id/iv_sw_share"
@@ -69,14 +69,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/setting" />
+            android:src="@drawable/setting"  />
 
         <ImageView
             android:id="@+id/iv_info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/info" />
+            android:src="@drawable/info" android:visibility="gone"/>
     </LinearLayout>
 
 </RelativeLayout>

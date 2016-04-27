@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/app/AndroidStudioProjects/github-coolkit/open-coolkit-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/Users/app/AndroidStudioProjects/github-coolkit/open-coolkit-android/app/build/intermediates/pre-dexed/debug/classes-f0dd6df8e7eab93ec6ff5d613ec89333ee7b3324.jar" />
+    </item>
+    <item
+        jar="/Users/app/AndroidStudioProjects/github-coolkit/open-coolkit-android/app/src/main/libs/httpmime-4.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d34b163e52a9727101aced60775d51c5085390a1">
+        <dex dex="/Users/app/AndroidStudioProjects/github-coolkit/open-coolkit-android/app/build/intermediates/pre-dexed/debug/httpmime-4.1.1-729524cbd531a3e4e889592f328485c0df2049c7.jar" />
+    </item>
+    <item
+        jar="/Users/app/AndroidStudioProjects/github-coolkit/open-coolkit-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/Users/app/AndroidStudioProjects/github-coolkit/open-coolkit-android/app/build/intermediates/pre-dexed/debug/classes-bee929519d8b2e32a86c99a8122351183093d052.jar" />
+    </item>
+    <item
+        jar="/Users/app/AndroidStudioProjects/github-coolkit/open-coolkit-android/app/libs/coolkit-2.3-2016-1-28.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e2348930a4b134b2be5eeb8f0645f3f20dc00f02">
+        <dex dex="/Users/app/AndroidStudioProjects/github-coolkit/open-coolkit-android/app/build/intermediates/pre-dexed/debug/coolkit-2.3-2016-1-28-b1814e68602a27d19b71c79b873ef6040128e2bd.jar" />
+    </item>
+    <item
+        jar="/Users/app/AndroidStudioProjects/github-coolkit/open-coolkit-android/app/libs/umeng-update-v2.6.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e76510af0986842b672c59d29502f3d29866320a">
+        <dex dex="/Users/app/AndroidStudioProjects/github-coolkit/open-coolkit-android/app/build/intermediates/pre-dexed/debug/umeng-update-v2.6.0.1-b93e02893da04dbace13eecb004ece2f9d891f81.jar" />
+    </item>
+    <item
+        jar="/Users/app/jimmy/adt/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/Users/app/AndroidStudioProjects/github-coolkit/open-coolkit-android/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-410cddee0e74a9b9feaf63c398003d72a08453eb.jar" />
+    </item>
+    <item
+        jar="/Users/app/AndroidStudioProjects/github-coolkit/open-coolkit-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/Users/app/AndroidStudioProjects/github-coolkit/open-coolkit-android/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-412a9c3b8dcf749adfb6b6e4849028e8d37f5db0.jar" />
+    </item>
+
+</items>
