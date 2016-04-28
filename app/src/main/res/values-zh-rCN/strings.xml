@@ -313,7 +313,7 @@
    <!-- <string name="exit_coolkit">退出酷宅</string>-->
     <string name="exit_coolkit">退出易微联</string>
 
-    <string name="app_name">智能家居</string>
+    <string name="app_name">iwelink</string>
    <!-- <string name="app_name">酷宅</string>-->
     <string name="reciver_invite">用户%1$s邀请您使用设备%2$s</string>
     <string name="new_home_kit">酷宅%1$s版本更新</string>

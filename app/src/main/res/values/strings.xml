@@ -314,7 +314,7 @@
     <string name="exit_coolkit">Exit e-Welink</string>
 
     <!--<string name="app_name">CoolKit</string>-->
-    <string name="app_name">aihelper</string>
+    <string name="app_name">iwelink</string>
     <string name="reciver_invite">User %1$s is sharning device %2$s to you</string>
     <string name="new_home_kit">coolkit %1$s apk update</string>
     <string name="versionString">version：%1$s,check new version</string>
