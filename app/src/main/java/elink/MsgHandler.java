@@ -1,4 +1,4 @@
-package elink;
+p
 
 import android.os.Handler;
 
@@ -59,7 +59,7 @@ public class MsgHandler extends Handler {
 //            actionName = "com.homekit.action.UPDATE";
 //        } else if ("sysmsg".equals(action)) {
 //            actionName = "com.homekit.action.SYSMSG";
-//
+//g
 //        } else if ("redirect".equals(action)) {
 //
 //            doRedirectAction(json);
